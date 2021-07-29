@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ProjectList from "./ProjectList";
 import Social from "./Social";
 
-function home() {
+function Home() {
     return (
       <div>
         {/* HERO */}
@@ -159,4 +159,4 @@ function home() {
     );
 }
 
-    export default home;
+    export default Home;
