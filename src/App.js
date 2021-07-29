@@ -2,8 +2,9 @@ import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./home";
-import Projects from "./projects";
+import Home from "./Home";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -22,16 +23,16 @@ function App() {
 
               {/* MIDDLE HEADER */}
               <div className="flex items-center space-x-4">
-                <Link to="/home" className="inline-block hover:text-gray-900">
+                <Link to="/Home" className="inline-block hover:text-gray-900">
                   Home
                 </Link>
                 <Link
-                  to="/projects"
+                  to="/Projects"
                   className="inline-block p-3 hover:text-gray-900"
                 >
                   Projects
                 </Link>
-                <Link to="/" className="inline-block p-3 hover:text-gray-900">
+                <Link to="/Contact" className="inline-block p-3 hover:text-gray-900">
                   Contact
                 </Link>
               </div>
@@ -52,14 +53,14 @@ function App() {
           </div>
 
           <Switch>
-            <Route path="/home">
+            <Route path="/Home">
               <Home />
             </Route>
-            <Route path="/projects">
+            <Route path="/Projects">
               <Projects />
             </Route>
-            <Route path="/projects">
-              <Projects />
+            <Route path="/Contact">
+              <Contact />
             </Route>
           </Switch>
 
