@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import ProjectList from "./ProjectList";
 import Social from "./Social";
 
+
+
 function Home() {
     return (
       <div>
@@ -13,6 +15,7 @@ function Home() {
           container
           mx-auto
           flex
+          flex-wrap
           px-6
           lg:px-0
           py-6
@@ -73,15 +76,17 @@ function Home() {
               Get in touch
             </Link>
           </div>
-          <div className="p-6 hidden lg:inline-block">
+          <div className="p-6">
             <img
               src="/media/debbie.jpg"
               alt="debbie"
-              className="rounded-full h-80 w-80 shadow-2xl border-4 border-orange-400"
+              className="rounded-full h-56 w-56 lg:h-80 lg:w-80 shadow-2xl border-4 border-orange-400"
             />
           </div>
         </div>
-        ;{/* PROJECTS */}
+
+
+        {/* PROJECTS */}
         <div className="container mx-auto mb-16 px-6 lg:px-0 lg:w-9/12">
           <div className="text-center">
             <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
