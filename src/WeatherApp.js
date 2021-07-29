@@ -8,7 +8,7 @@ function WeatherApp() {
   return (
     <div className="container mx-auto ">
       <div className="bg-orange-50 p-6">
-        <h2 className="font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
+        <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
           React Weather App
         </h2>
         <p className="text-xl mb-6 text-teal-800">

@@ -18,7 +18,7 @@ function Social() {
                 duration-500
                 hover:scale-110"
           />
-          <p className="pt-3 text-teal-600 text-lg hover-underline-animation">
+          <p className="text-teal-600 text-lg hover-underline-animation">
             Twitter
           </p>
         </a>
@@ -34,7 +34,7 @@ function Social() {
                 duration-500
                 hover:scale-110"
           />
-          <p className="pt-3 text-teal-600 text-lg hover-underline-animation">
+          <p className="text-teal-600 text-lg hover-underline-animation">
             Github
           </p>
         </a>
@@ -50,7 +50,7 @@ function Social() {
                 duration-500
                 hover:scale-110"
           />
-          <p className="pt-3 text-teal-600 text-lg hover-underline-animation">
+          <p className="text-teal-600 text-lg hover-underline-animation">
             LinkedIn
           </p>
         </a>

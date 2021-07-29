@@ -19,8 +19,8 @@ function App() {
             <div className="container mx-auto lg:flex lg:justify-between px-6 lg-px-0 py-6">
               {/* LEFT HEADER */}
               <div className="flex items-center space-x-4">
-                <Link to="/" className="font-bold text-2xl text-teal-800">
-                  Debbie Dann Digital
+                <Link to="/" className="font-bold font-serif text-2xl text-teal-800">
+                  debbie dann digital
                 </Link>
               </div>
 

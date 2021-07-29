@@ -28,8 +28,9 @@ function home() {
               mb-8
               text-4xl
               lg:text-7xl
-              font-extrabold
+              font-bold
               text-left text-teal-600
+            font-serif
             "
             >
               I am a
@@ -83,7 +84,7 @@ function home() {
         ;{/* PROJECTS */}
         <div className="container mx-auto mb-16 px-6 lg:px-0 lg:w-9/12">
           <div className="text-center">
-            <h2 className="font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
+            <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
               Portfolio
             </h2>
             <p className="text-xl mb-8 text-teal-800">
@@ -132,7 +133,7 @@ function home() {
             <img src="./media/proud-coder.svg" alt="proud coder" />
           </div>
           <div className="p-6 lg:px-16 bg-orange-50 lg:flex flex-col justify-center">
-            <h2 className="font-extrabold text-3xl lg:text-5xl mb-6 text-teal-600">
+            <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-6 text-teal-600">
               Who am I?
             </h2>
             <p className="text-xl mb-6 text-teal-800 text-left">
@@ -145,7 +146,7 @@ function home() {
         </div>
         ;{/* CONNECT WITH ME */}
         <div className="container mx-auto mb-16 px-6 lg:px-0 text-center lg:w-1/2">
-          <h2 className="font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
+          <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-4 text-teal-600">
             Connect with me
           </h2>
           <p className="text-xl mb-6 text-teal-800">

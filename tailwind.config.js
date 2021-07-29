@@ -22,6 +22,7 @@ module.exports = {
         orange: colors.orange,
         teal: colors.teal,
       },
+    
     },
   },
   variants: {
