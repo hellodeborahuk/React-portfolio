@@ -25,22 +25,22 @@ function App() {
               </div>
 
               {/* MIDDLE HEADER */}
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-6">
                 <Link
                   to="/"
-                  className="inline-block hover:text-gray-900 hover-underline-animation"
+                  className="inline-block  hover:text-gray-900 hover-underline-animation"
                 >
                   Home
                 </Link>
                 <Link
                   to="/projects"
-                  className="inline-block p-3 hover:text-gray-900 hover-underline-animation"
+                  className="inline-block hover:text-gray-900 hover-underline-animation"
                 >
                   Projects
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-block p-3 hover:text-gray-900 hover-underline-animation"
+                  className="inline-block  hover:text-gray-900 hover-underline-animation"
                 >
                   Contact
                 </Link>
