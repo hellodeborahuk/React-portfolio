@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import WeatherApp from "./WeatherApp";
 import Dosha from "./Dosha";
+import "./App.css";
 
 function App() {
   return (
@@ -25,18 +26,21 @@ function App() {
 
               {/* MIDDLE HEADER */}
               <div className="flex items-center space-x-4">
-                <Link to="/" className="inline-block hover:text-gray-900">
+                <Link
+                  to="/"
+                  className="inline-block hover:text-gray-900 hover-underline-animation"
+                >
                   Home
                 </Link>
                 <Link
                   to="/projects"
-                  className="inline-block p-3 hover:text-gray-900"
+                  className="inline-block p-3 hover:text-gray-900 hover-underline-animation"
                 >
                   Projects
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-block p-3 hover:text-gray-900"
+                  className="inline-block p-3 hover:text-gray-900 hover-underline-animation"
                 >
                   Contact
                 </Link>

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import Project from "./Project";
+import ProjectList from "./ProjectList";
 import Social from "./Social";
 
 function home() {
@@ -16,7 +16,7 @@ function home() {
           px-6
           lg:px-0
           py-6
-          mb-16
+          mb-4
           text-center
           items-center
           justify-around
@@ -50,10 +50,8 @@ function home() {
             <p className="mb-8 text-lg lg:text-xl text-teal-800">
               Hello, I'm Debbie. I design and code beautifully simple things.
             </p>
-            <a
-              href="/"
+            <Link to="/Contact"
               className="
-            
               py-3
               px-12
               rounded
@@ -65,14 +63,14 @@ function home() {
               hover:from-orange-400 hover:to-orange-300
               text-teal-800
               font-bold
-              text-2lg
+              text-lg
               tracking-wide
               transition
               duration-500
             "
             >
               Get in touch
-            </a>
+            </Link>
           </div>
           <div className="p-6 hidden lg:inline-block">
             <img
@@ -88,12 +86,12 @@ function home() {
             <h2 className="font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
               Portfolio
             </h2>
-            <p className="text-xl mb-6 text-teal-800">
+            <p className="text-xl mb-8 text-teal-800">
               Take a look at some of my projects
             </p>
           </div>
 
-          <Project maxItems="3" />
+          <ProjectList maxItems="3" />
 
           <div className="flex justify-center">
             <Link
@@ -110,7 +108,7 @@ function home() {
               hover:from-orange-400 hover:to-orange-300
               text-teal-800
               font-bold
-              text-2lg
+              text-lg
               tracking-wide
               transition
               duration-500

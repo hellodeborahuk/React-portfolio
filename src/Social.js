@@ -18,7 +18,9 @@ function Social() {
                 duration-500
                 hover:scale-110"
           />
-          <p className="pt-3 text-teal-600 text-lg">Twitter</p>
+          <p className="pt-3 text-teal-600 text-lg hover-underline-animation">
+            Twitter
+          </p>
         </a>
         <a
           href="https://github.com/hellodeborahuk"
@@ -32,7 +34,9 @@ function Social() {
                 duration-500
                 hover:scale-110"
           />
-          <p className="pt-3 text-teal-600 text-lg">Github</p>
+          <p className="pt-3 text-teal-600 text-lg hover-underline-animation">
+            Github
+          </p>
         </a>
         <a
           href="https://www.linkedin.com/in/debbiedann/"
@@ -46,7 +50,9 @@ function Social() {
                 duration-500
                 hover:scale-110"
           />
-          <p className="pt-3 text-teal-600 text-lg">LinkedIn</p>
+          <p className="pt-3 text-teal-600 text-lg hover-underline-animation">
+            LinkedIn
+          </p>
         </a>
       </div>
     );

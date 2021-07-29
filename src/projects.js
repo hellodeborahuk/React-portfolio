@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "./Project";
+import ProjectList from "./ProjectList";
 
 
 function Projects() {
@@ -14,8 +14,7 @@ function Projects() {
         </p>
       </header>
 
-      <Project maxItems="6" />
-    
+      <ProjectList maxItems="6" />
     </div>
   );
 }

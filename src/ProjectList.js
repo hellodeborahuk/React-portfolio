@@ -7,14 +7,16 @@ const project = [
     name: "React Weather App",
     thumbnail: "./media/react-weather.png",
     copy: "A weather app built with ReactJS and API intergration for my SheCodes Workshop project.",
-    link: "/WeatherApp",
+    caseStudy: "/WeatherApp",
+    link: "https://ecstatic-swartz-7b404c.netlify.app/",
     github: "https://github.com/hellodeborahuk/react-weather-app",
   },
   {
     name: "Ayurveda Dosha Quiz",
     thumbnail: "./media/dosha-quiz.png",
     copy: "I created a quiz from scratch to implement what I've learnt about React.",
-    link: "/Dosha",
+    caseStudy: "/Dosha",
+    link: "https://cranky-curran-3d406a.netlify.app/",
     github: "https://github.com/hellodeborahuk/dosha-quiz",
   },
   {
@@ -51,7 +53,8 @@ function Project({ maxItems }) {
     <div className="container mx-auto mb-12 grid grid-cols-1 md:grid-cols-3 gap-6">
       {project.slice(0, maxItems).map(function (project, index) {
         return (
-          <div key={index}
+          <div
+            key={index}
             className="
                 bg-orange-50
                 rounded-lg
@@ -67,11 +70,40 @@ function Project({ maxItems }) {
               <h1 className="font-bold mb-2 text-xl text-teal-800">
                 {project.name}
               </h1>
-              <p className="text-teal-700">{project.copy}</p>
+              <p className="text-teal-700 mb-4">{project.copy}</p>
+              {!project.caseStudy ? (
+                ""
+              ) : (
+                <a
+                  href={project.caseStudy}
+                  className="px-10
+              py-2
+              m-auto
+              
+              rounded
+              shadow-lg
+              hover:shadow-2xl
+              bg-gradient-to-br
+              from-orange-300
+              to-orange-400
+              hover:from-orange-400 hover:to-orange-300
+              text-teal-800
+              font-bold
+   
+              transition
+              duration-500"
+                >
+                  Case study
+                </a>
+              )}
             </div>
             <div className="flex mb-4 m-auto justify-evenly w-1/2">
               <p className="text-3xl font-bold text-orange-400">
-                <a href={project.link}>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaLink
                     className="transform
                 transition
