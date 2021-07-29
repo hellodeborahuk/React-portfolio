@@ -2,6 +2,9 @@ import React from "react";
 import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import WeatherApp from "./WeatherApp";
+
 
 function home() {
     return (
@@ -92,7 +95,7 @@ function home() {
             </p>
           </div>
           <div className="container mx-auto mb-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <a href="/">
+            <Link to="/WeatherApp">
               <div
                 className="
                 bg-orange-50
@@ -119,7 +122,7 @@ function home() {
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
             <a href="/">
               <div
                 className="
@@ -177,8 +180,7 @@ function home() {
             </a>
           </div>
           <div className="flex justify-center">
-            <a
-              href="/"
+            <Link to="/Projects"
               className="
               px-12
               py-3
@@ -198,7 +200,7 @@ function home() {
             "
             >
               View more projects
-            </a>
+            </Link>
           </div>
         </div>
         ;{/* ABOUT ME */}

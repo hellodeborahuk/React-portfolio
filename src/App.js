@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import WeatherApp from "./WeatherApp";
+
 
 function App() {
   return (
@@ -32,7 +34,10 @@ function App() {
                 >
                   Projects
                 </Link>
-                <Link to="/Contact" className="inline-block p-3 hover:text-gray-900">
+                <Link
+                  to="/Contact"
+                  className="inline-block p-3 hover:text-gray-900"
+                >
                   Contact
                 </Link>
               </div>
@@ -61,6 +66,9 @@ function App() {
             </Route>
             <Route path="/Contact">
               <Contact />
+            </Route>
+            <Route path="/WeatherApp">
+              <WeatherApp />
             </Route>
           </Switch>
 

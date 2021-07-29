@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherApp from "./WeatherApp";
 
 function Projects() {
     return (
@@ -68,7 +69,11 @@ function Projects() {
               </div>
             </div>
           </a>
-          <a href="https://happy-bartik-7e504a.netlify.app/">
+          <a
+            href="https://happy-bartik-7e504a.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               className="
                 bg-orange-50
@@ -95,7 +100,11 @@ function Projects() {
               </div>
             </div>
           </a>
-          <a href="https://jolly-ride-611c10.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://jolly-ride-611c10.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               className="
                 bg-orange-50
@@ -122,7 +131,11 @@ function Projects() {
               </div>
             </div>
           </a>
-          <a href="https://relaxed-stonebraker-528b23.netlify.app/">
+          <a
+            href="https://relaxed-stonebraker-528b23.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               className="
                 bg-orange-50
@@ -150,7 +163,11 @@ function Projects() {
               </div>
             </div>
           </a>
-          <a href="https://codepen.io/hellodeborahuk/full/xxRaRKO">
+          <a
+            href="https://codepen.io/hellodeborahuk/full/xxRaRKO"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               className="
                 bg-orange-50
