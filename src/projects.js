@@ -1,19 +1,20 @@
 import React from "react";
-import WeatherApp from "./WeatherApp";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 
 function Projects() {
     return (
       <div className="container mx-auto mb-16 px-6 lg:px-0">
         <div className="text-center">
           <h2 className="font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
-            Portfolio
+            Projects
           </h2>
           <p className="text-xl mb-6 text-teal-800">
             Take a look at some of my projects
           </p>
         </div>
         <div className="container mx-auto mb-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <a href="/">
+          <Link to="/WeatherApp">
             <div
               className="
                 bg-orange-50
@@ -40,8 +41,8 @@ function Projects() {
                 </p>
               </div>
             </div>
-          </a>
-          <a href="/">
+          </Link>
+          <Link to="/Dosha">
             <div
               className="
                 bg-orange-50
@@ -68,7 +69,7 @@ function Projects() {
                 </p>
               </div>
             </div>
-          </a>
+          </Link>
           <a
             href="https://happy-bartik-7e504a.netlify.app/"
             target="_blank"

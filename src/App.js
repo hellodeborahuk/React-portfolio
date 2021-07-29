@@ -6,7 +6,7 @@ import Home from "./Home";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import WeatherApp from "./WeatherApp";
-
+import Dosha from "./Dosha";
 
 function App() {
   return (
@@ -69,6 +69,9 @@ function App() {
             </Route>
             <Route path="/WeatherApp">
               <WeatherApp />
+            </Route>
+            <Route path="/Dosha">
+              <Dosha />
             </Route>
           </Switch>
 

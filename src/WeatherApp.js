@@ -1,6 +1,8 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 
 function WeatherApp() {
   return (
@@ -185,6 +187,30 @@ function WeatherApp() {
             </a>{" "}
             for this project.
           </p>
+          <div className="py-6 text-center">
+            <Link
+              to="/Projects"
+              className="
+              px-12
+              py-3
+              rounded
+              shadow-lg
+              hover:shadow-2xl
+              bg-gradient-to-br
+              from-orange-300
+              to-orange-400
+              hover:from-orange-400 hover:to-orange-300
+              text-teal-800
+              font-bold
+              text-2lg
+              tracking-wide
+              transition
+              duration-500
+            "
+            >
+              View more projects
+            </Link>
+          </div>
         </article>
       </div>
     </div>

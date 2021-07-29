@@ -3,7 +3,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import WeatherApp from "./WeatherApp";
+
 
 
 function home() {
@@ -123,7 +123,7 @@ function home() {
                 </div>
               </div>
             </Link>
-            <a href="/">
+            <Link to="/Dosha">
               <div
                 className="
                 bg-orange-50
@@ -150,7 +150,7 @@ function home() {
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
             <a href="/">
               <div
                 className="
