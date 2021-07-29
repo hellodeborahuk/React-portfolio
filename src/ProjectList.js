@@ -66,20 +66,18 @@ function Project({ maxItems }) {
               alt={project.name}
               className="rounded-t-lg"
             />
-            <div className="p-6">
+            <div className="px-6 pt-6 pb-4">
               <h1 className="font-bold mb-2 text-xl text-teal-800">
                 {project.name}
               </h1>
-              <p className="text-teal-700 mb-4">{project.copy}</p>
+              <p className="text-teal-700 mb-3">{project.copy}</p>
               {!project.caseStudy ? (
                 ""
               ) : (
-                <a
+                <div className="flex justify-center"><a
                   href={project.caseStudy}
                   className="px-10
               py-2
-              m-auto
-              
               rounded
               shadow-lg
               hover:shadow-2xl
@@ -89,12 +87,11 @@ function Project({ maxItems }) {
               hover:from-orange-400 hover:to-orange-300
               text-teal-800
               font-bold
-   
               transition
               duration-500"
                 >
                   Case study
-                </a>
+                </a></div>
               )}
             </div>
             <div className="flex mb-4 m-auto justify-evenly w-1/2">
