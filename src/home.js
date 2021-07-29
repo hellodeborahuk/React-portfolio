@@ -85,7 +85,7 @@ function home() {
           </div>
         </div>
         ;{/* PROJECTS */}
-        <div className="container mx-auto mb-16 px-6 lg:px-0">
+        <div className="container mx-auto mb-16 px-6 lg:px-0 lg:w-9/12">
           <div className="text-center">
             <h2 className="font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
               Portfolio
@@ -180,7 +180,8 @@ function home() {
             </a>
           </div>
           <div className="flex justify-center">
-            <Link to="/Projects"
+            <Link
+              to="/Projects"
               className="
               px-12
               py-3
@@ -267,7 +268,6 @@ function home() {
             </a>
           </div>
         </div>
-        
       </div>
     );
 }

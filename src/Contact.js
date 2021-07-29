@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Contact() {
 return (
   <div className="container mx-auto">
-    <div className="container mx-auto mb-16 px-6 lg:px-0  lg:w-1/2">
+    <div className="container mx-auto mb-16 px-6 lg:px-0  lg:w-9/12">
       <h2 className="font-extrabold text-3xl lg:text-5xl mb-3 lg:mb-8 text-center text-teal-600">
         Contact me
       </h2>

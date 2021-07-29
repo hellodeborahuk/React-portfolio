@@ -44,13 +44,13 @@ function App() {
 
               {/* RIGHT HEADER */}
               <div className="hidden lg:flex items-center space-x-4">
-                <a href="/" className=" hover:text-gray-900">
+                <a href="/" className=" hover:text-orange-400">
                   <FaTwitter />
                 </a>
-                <a href="/" className="p-3 hover:text-gray-900">
+                <a href="/" className="p-3 hover:text-orange-400">
                   <FaGithub />
                 </a>
-                <a href="/" className="p-3 hover:text-gray-900">
+                <a href="/" className="p-3 hover:text-orange-400">
                   <FaLinkedinIn />
                 </a>
               </div>
