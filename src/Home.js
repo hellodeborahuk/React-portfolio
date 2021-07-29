@@ -149,7 +149,7 @@ function Home() {
             </p>
           </div>
         </div>
-        ;{/* CONNECT WITH ME */}
+        {/* CONNECT WITH ME */}
         <div className="container mx-auto mb-16 px-6 lg:px-0 text-center lg:w-1/2">
           <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-4 text-teal-600">
             Connect with me
