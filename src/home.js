@@ -1,10 +1,8 @@
 import React from "react";
-import { FaTwitter } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-
+import { Link } from "react-router-dom";
+import Project from "./Project";
+import Social from "./Social";
 
 function home() {
     return (
@@ -94,91 +92,9 @@ function home() {
               Take a look at some of my projects
             </p>
           </div>
-          <div className="container mx-auto mb-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Link to="/WeatherApp">
-              <div
-                className="
-                bg-orange-50
-                rounded-lg
-                shadow-lg
-                transform
-                transition
-                duration-500
-                hover:scale-105
-              "
-              >
-                <img
-                  src="./media/react-weather.png"
-                  alt="react weather"
-                  className="rounded-t-lg"
-                />
-                <div className="p-6">
-                  <h1 className="font-bold mb-2 text-xl text-teal-900">
-                    React Weather App
-                  </h1>
-                  <p className="text-teal-800">
-                    A weather app built with ReactJS and API intergration for my
-                    SheCodes Workshop project.
-                  </p>
-                </div>
-              </div>
-            </Link>
-            <Link to="/Dosha">
-              <div
-                className="
-                bg-orange-50
-                rounded-lg
-                shadow-lg
-                transform
-                transition
-                duration-500
-                hover:scale-105
-              "
-              >
-                <img
-                  src="media/dosha-quiz.png"
-                  alt="dosha quiz"
-                  className="rounded-t-lg"
-                />
-                <div className="p-6">
-                  <h1 className="font-bold mb-2 text-xl text-teal-900">
-                    Ayurveda Dosha Quiz
-                  </h1>
-                  <p className="text-teal-800">
-                    I created a quiz from scratch to implement what I've learnt
-                    about React.
-                  </p>
-                </div>
-              </div>
-            </Link>
-            <a href="/">
-              <div
-                className="
-                bg-orange-50
-                rounded-lg
-                shadow-lg
-                transform
-                transition
-                duration-500
-                hover:scale-105
-              "
-              >
-                <img
-                  src="media/tictactoe.png"
-                  alt="tic tac toe"
-                  className="rounded-t-lg"
-                />
-                <div className="p-6">
-                  <h1 className="font-bold mb-2 text-xl text-teal-900">
-                    Tic tac toe game
-                  </h1>
-                  <p className="text-teal-800">
-                    A simple tic tac toe game build using React.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
+
+          <Project maxItems="3" />
+
           <div className="flex justify-center">
             <Link
               to="/Projects"
@@ -238,35 +154,7 @@ function home() {
             You can find me on Twitter for a chat or LinkedIn for something a
             bit more professional. Come say hello.
           </p>
-          <div className="flex justify-evenly mb-8">
-            <a href="/" className="text-6xl font-bold text-orange-400">
-              <FaTwitter
-                className="transform
-                transition
-                duration-500
-                hover:scale-110"
-              />
-              <p className="pt-3 text-teal-600 text-lg">Twitter</p>
-            </a>
-            <a href="/" className="text-6xl font-bold text-orange-400">
-              <FaGithub
-                className="transform
-                transition
-                duration-500
-                hover:scale-110"
-              />
-              <p className="pt-3 text-teal-600 text-lg">Github</p>
-            </a>
-            <a href="/" className="text-6xl font-bold text-orange-400">
-              <FaLinkedinIn
-                className="transform
-                transition
-                duration-500
-                hover:scale-110"
-              />
-              <p className="pt-3 text-teal-600 text-lg">LinkedIn</p>
-            </a>
-          </div>
+          <Social />
         </div>
       </div>
     );

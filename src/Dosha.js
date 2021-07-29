@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Dosha() {
   return (
@@ -63,7 +63,7 @@ function Dosha() {
             </div>
           </div>
         </div>
-        <article className="space-y-4">
+        <article className="space-y-4 lg:w-8/12">
           <p className="text-teal-800">
             I wanted to build a project on my own. First up I created a design
             for the dosha quiz in Figma and found a colour scheme I liked the
@@ -76,7 +76,7 @@ function Dosha() {
           <img
             src="./media/dosha-quiz-figma.png"
             alt="dosha quiz design in figma"
-            className="m-auto"
+            className="m-auto lg:w-9/12"
           />
           <h3 className="font-bold text-xl lg:text-2xl mb-3 text-teal-600">
             Stumbling blocks
@@ -93,9 +93,9 @@ function Dosha() {
           </p>
 
           <img
-            src="./media/dosha-quiz-code"
+            src="./media/dosha-quiz-code.png"
             alt="dosha quiz counting code"
-            className="m-auto"
+            className="m-auto lg:w-9/12"
           />
 
           <h3 className="font-bold text-xl lg:text-2xl mb-3 text-teal-600">
@@ -114,7 +114,7 @@ function Dosha() {
           <img
             src="./media/dosha-quiz.png"
             alt="dosha quiz"
-            className="m-auto"
+            className="m-auto lg:w-9/12"
           />
           <p className=" text-teal-800">
             View the{" "}

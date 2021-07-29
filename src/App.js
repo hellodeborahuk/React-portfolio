@@ -18,24 +18,24 @@ function App() {
             <div className="container mx-auto lg:flex lg:justify-between px-6 lg-px-0 py-6">
               {/* LEFT HEADER */}
               <div className="flex items-center space-x-4">
-                <a href="/" className="font-bold text-2xl text-teal-800">
+                <Link to="/" className="font-bold text-2xl text-teal-800">
                   Debbie Dann Digital
-                </a>
+                </Link>
               </div>
 
               {/* MIDDLE HEADER */}
               <div className="flex items-center space-x-4">
-                <Link to="/Home" className="inline-block hover:text-gray-900">
+                <Link to="/" className="inline-block hover:text-gray-900">
                   Home
                 </Link>
                 <Link
-                  to="/Projects"
+                  to="/projects"
                   className="inline-block p-3 hover:text-gray-900"
                 >
                   Projects
                 </Link>
                 <Link
-                  to="/Contact"
+                  to="/contact"
                   className="inline-block p-3 hover:text-gray-900"
                 >
                   Contact
@@ -44,13 +44,28 @@ function App() {
 
               {/* RIGHT HEADER */}
               <div className="hidden lg:flex items-center space-x-4">
-                <a href="/" className=" hover:text-orange-400">
+                <a
+                  href="https://twitter.com/debbie_digital"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" hover:text-orange-400"
+                >
                   <FaTwitter />
                 </a>
-                <a href="/" className="p-3 hover:text-orange-400">
+                <a
+                  href="https://github.com/hellodeborahuk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 hover:text-orange-400"
+                >
                   <FaGithub />
                 </a>
-                <a href="/" className="p-3 hover:text-orange-400">
+                <a
+                  href="https://www.linkedin.com/in/debbiedann/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 hover:text-orange-400"
+                >
                   <FaLinkedinIn />
                 </a>
               </div>
@@ -58,20 +73,20 @@ function App() {
           </div>
 
           <Switch>
-            <Route path="/Home">
-              <Home />
-            </Route>
-            <Route path="/Projects">
+            <Route path="/projects">
               <Projects />
             </Route>
-            <Route path="/Contact">
+            <Route path="/contact">
               <Contact />
             </Route>
-            <Route path="/WeatherApp">
+            <Route path="/weatherapp">
               <WeatherApp />
             </Route>
-            <Route path="/Dosha">
+            <Route path="/dosha">
               <Dosha />
+            </Route>
+            <Route path="/">
+              <Home />
             </Route>
           </Switch>
 
@@ -93,15 +108,15 @@ function App() {
             >
               <div>Copyright &copy; 2021</div>
               <div className="space-y-2 mb-3">
-                <a href="/" className="block">
+                <Link to="/" className="block">
                   Home
-                </a>
-                <a href="/" className="block">
+                </Link>
+                <Link to="/projects" className="block">
                   Projects
-                </a>
-                <a href="/" className="block">
+                </Link>
+                <Link to="/contact" className="block">
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>

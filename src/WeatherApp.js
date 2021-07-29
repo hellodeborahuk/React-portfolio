@@ -1,12 +1,12 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function WeatherApp() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto ">
       <div className="bg-orange-50 p-6">
         <h2 className="font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
           React Weather App
@@ -66,7 +66,7 @@ function WeatherApp() {
             </div>
           </div>
         </div>
-        <article className="space-y-4">
+        <article className="space-y-4 lg:w-8/12">
           <p className="text-teal-800">
             For the SheCodes React Workshop, we went through the process of
             creating a Weather App. It started with the design and creating a
