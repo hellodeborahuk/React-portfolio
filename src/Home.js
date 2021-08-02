@@ -1,5 +1,12 @@
 import React from "react";
-
+import {
+  FaCss3Alt,
+  FaHtml5,
+  FaReact,
+  FaFigma,
+  FaGithub,
+} from "react-icons/fa";
+import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { Link } from "react-router-dom";
 import ProjectList from "./ProjectList";
 import Social from "./Social";
@@ -54,7 +61,8 @@ function Home() {
             <p className="mb-8 text-lg lg:text-xl text-teal-800">
               Hello, I'm Debbie. I design and code beautifully simple things.
             </p>
-            <Link to="/Contact"
+            <Link
+              to="/Contact"
               className="
               py-3
               px-12
@@ -84,7 +92,6 @@ function Home() {
             />
           </div>
         </div>
-
 
         {/* PROJECTS */}
         <div className="container mx-auto mb-16 px-6 lg:px-0 lg:w-9/12">
@@ -124,7 +131,28 @@ function Home() {
             </Link>
           </div>
         </div>
-        ;{/* ABOUT ME */}
+
+        {/* TECH STACK */}
+
+        <div className="container mx-auto mb-16 text-center">
+          <h2 className=" font-serif font-extrabold text-3xl lg:text-5xl mb-8 text-teal-600">
+            Tech Stack
+          </h2>
+          <p className="text-xl mb-6 text-teal-800">
+            HTML5, CSS3, Javascript, React, Tailwind CSS, Figma and Github
+          </p>
+          <div className="flex justify-center text-7xl text-orange-400">
+            <FaHtml5 className="p-2" />
+            <FaCss3Alt className="p-2" />
+            <SiJavascript className="p-2" />
+            <FaReact className="p-2" />
+            <SiTailwindcss className="p-2" />
+            <FaFigma className="p-2" />
+            <FaGithub className="p-2" />
+          </div>
+        </div>
+
+        {/* ABOUT ME */}
         <div
           className="container mx-auto px-6 py-6
           mb-16

@@ -19,7 +19,10 @@ function App() {
             <div className="container mx-auto lg:flex lg:justify-between px-6 lg-px-0 py-6">
               {/* LEFT HEADER */}
               <div className="flex items-center space-x-4">
-                <Link to="/" className="font-bold font-serif text-2xl text-teal-800">
+                <Link
+                  to="/"
+                  className="font-bold font-serif text-2xl text-teal-800"
+                >
                   debbie dann digital
                 </Link>
               </div>
@@ -44,34 +47,6 @@ function App() {
                 >
                   Contact
                 </Link>
-              </div>
-
-              {/* RIGHT HEADER */}
-              <div className="hidden lg:flex items-center space-x-4">
-                <a
-                  href="https://twitter.com/debbie_digital"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=" hover:text-orange-400"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  href="https://github.com/hellodeborahuk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 hover:text-orange-400"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/debbiedann/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 hover:text-orange-400"
-                >
-                  <FaLinkedinIn />
-                </a>
               </div>
             </div>
           </div>
