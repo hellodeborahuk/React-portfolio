@@ -1,6 +1,3 @@
-import { FaTwitter } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Projects from "./Projects";

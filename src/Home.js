@@ -93,6 +93,18 @@ function Home() {
           </div>
         </div>
 
+        <div className="mb-12 p-6 bg-orange-50">
+           <div className="flex justify-center p-12 md:p-0 text-7xl text-teal-600">
+            <FaHtml5 className="p-2" />
+            <FaCss3Alt className="p-2" />
+            <SiJavascript className="p-2" />
+            <FaReact className="p-2" />
+            <SiTailwindcss className="p-2" />
+            <FaFigma className="p-2" />
+            <FaGithub className="p-2" />
+          </div>
+        </div>
+
         {/* PROJECTS */}
         <div className="container mx-auto mb-16 px-6 lg:px-0 lg:w-9/12">
           <div className="text-center">
@@ -141,7 +153,7 @@ function Home() {
           <p className="text-xl mb-6 text-teal-800">
             HTML5, CSS3, Javascript, React, Tailwind CSS, Figma and Github
           </p>
-          <div className="flex justify-center p-6 md:p-0 text-7xl text-orange-400">
+          <div className="flex justify-center p-12 md:p-0 text-7xl text-orange-400">
             <FaHtml5 className="p-2" />
             <FaCss3Alt className="p-2" />
             <SiJavascript className="p-2" />
