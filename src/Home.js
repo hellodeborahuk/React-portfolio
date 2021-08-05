@@ -4,7 +4,6 @@ import {
   FaHtml5,
   FaReact,
   FaFigma,
-  FaGithub,
 } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { Link } from "react-router-dom";
@@ -93,7 +92,6 @@ function Home() {
           </div>
         </div>
 
-
         {/* PROJECTS */}
         <div className="container mx-auto mb-16 px-6 lg:px-0 lg:w-9/12">
           <div className="text-center">
@@ -135,24 +133,6 @@ function Home() {
 
         {/* TECH STACK */}
 
-        <div className="container mx-auto mb-16 text-center">
-          <h2 className=" font-serif font-extrabold text-3xl lg:text-5xl mb-8 text-teal-600">
-            Tech Stack
-          </h2>
-          <p className="text-xl mb-6 text-teal-800">
-            HTML5, CSS3, JavaScript, React, Tailwind CSS, Figma and GitHub
-          </p>
-          <div className="flex justify-center p-12 md:p-0 text-7xl text-orange-400">
-            <FaHtml5 className="p-2" />
-            <FaCss3Alt className="p-2" />
-            <SiJavascript className="p-2" />
-            <FaReact className="p-2" />
-            <SiTailwindcss className="p-2" />
-            <FaFigma className="p-2" />
-            <FaGithub className="p-2" />
-          </div>
-        </div>
-
         {/* ABOUT ME */}
         <div
           className="container mx-auto px-6 py-6
@@ -163,8 +143,38 @@ function Home() {
           grid-cols-2
           justify-evenly"
         >
-          <div className="p-6 bg-teal-600">
-            <img src="./media/proud-coder.svg" alt="proud coder" />
+          <div className="py-12 bg-teal-600 ">
+            <div className="container mx-auto grid justify-center justify-items-center">
+              <h2 className=" font-serif font-extrabold text-3xl lg:text-5xl mb-4 text-orange-50">
+                Skills
+              </h2>
+              <div className="grid grid-cols-3 gap-4 gap-y-6 justify-center justify-items-center md:p-0  text-orange-50">
+                <div>
+                  <FaHtml5 className="p-2 text-6xl block m-auto" />
+                  <p>HTML5</p>
+                </div>
+                <div>
+                  <FaCss3Alt className="p-2 text-6xl block m-auto" />
+                  <p>CCS3</p>
+                </div>
+                <div>
+                  <SiJavascript className="p-2 text-6xl block m-auto" />
+                  <p>JavaScript</p>
+                </div>
+                <div>
+                  <FaReact className="p-2 text-6xl block m-auto" />
+                  <p>React</p>
+                </div>
+                <div>
+                  <SiTailwindcss className="p-2 text-6xl block m-auto" />
+                  <p>Tailwind CSS</p>
+                </div>
+                <div>
+                  <FaFigma className="p-2 text-6xl block m-auto" />
+                  <p>Figma</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="p-6 lg:px-16 bg-orange-50 lg:flex flex-col justify-center">
             <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-6 text-teal-600">
