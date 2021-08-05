@@ -68,7 +68,7 @@ function App() {
 
           {/* FOOTER */}
 
-          <div className="py-6 bg-orange-50 text-orange-800">
+          <div className="py-6 bg-orange-50 text-teal-800">
             <div
               className="
             mt-4

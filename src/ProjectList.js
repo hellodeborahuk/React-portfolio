@@ -74,7 +74,7 @@ function Project({ maxItems }) {
               {!project.caseStudy ? (
                 ""
               ) : (
-                <div className="flex justify-center"><a
+                <div className="flex justify-center mb-3"><a
                   href={project.caseStudy}
                   className="px-10
               py-2

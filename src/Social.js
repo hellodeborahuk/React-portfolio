@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Social() {
     return (
-      <div className="flex justify-evenly mb-8">
+      <div className="flex justify-evenly">
         <a
           href="https://twitter.com/debbie_digital"
           target="_blank"
@@ -18,9 +18,6 @@ function Social() {
                 duration-500
                 hover:scale-110"
           />
-          <p className="text-teal-600 text-lg hover-underline-animation">
-            Twitter
-          </p>
         </a>
         <a
           href="https://github.com/hellodeborahuk"
@@ -34,10 +31,7 @@ function Social() {
                 duration-500
                 hover:scale-110"
           />
-          <p className="text-teal-600 text-lg hover-underline-animation">
-            Github
-          </p>
-        </a>
+                  </a>
         <a
           href="https://www.linkedin.com/in/debbiedann/"
           target="_blank"
@@ -50,9 +44,7 @@ function Social() {
                 duration-500
                 hover:scale-110"
           />
-          <p className="text-teal-600 text-lg hover-underline-animation">
-            LinkedIn
-          </p>
+         
         </a>
       </div>
     );
