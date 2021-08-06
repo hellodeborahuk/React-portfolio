@@ -5,11 +5,13 @@ import Contact from "./Contact";
 import WeatherApp from "./WeatherApp";
 import Dosha from "./Dosha";
 import "./App.css";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         {/* NAVIGATION */}
         <div className="bg-gradient-to-br from-teal-50 to-teal-100">
           <div className="text-gray-600">

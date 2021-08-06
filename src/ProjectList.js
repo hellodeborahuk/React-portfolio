@@ -61,11 +61,13 @@ function Project({ maxItems }) {
                 shadow-lg
                               "
           >
-            <img
-              src={project.thumbnail}
-              alt={project.name}
-              className="rounded-t-lg"
-            />
+            
+              <img
+                src={project.thumbnail}
+                alt={project.name}
+                className="rounded-t-lg"
+              />
+            
             <div className="px-6 pt-6 pb-4">
               <h1 className="font-bold mb-2 text-xl text-teal-800">
                 {project.name}
@@ -74,9 +76,10 @@ function Project({ maxItems }) {
               {!project.caseStudy ? (
                 ""
               ) : (
-                <div className="flex justify-center mb-3"><a
-                  href={project.caseStudy}
-                  className="px-10
+                <div className="flex justify-center mb-3">
+                  <a
+                    href={project.caseStudy}
+                    className="px-10
               py-2
               rounded
               shadow-lg
@@ -90,9 +93,10 @@ function Project({ maxItems }) {
               font-bold
               transition
               duration-500"
-                >
-                  Case study
-                </a></div>
+                  >
+                    Case study
+                  </a>
+                </div>
               )}
             </div>
             <div className="flex mb-4 m-auto justify-evenly w-1/2">

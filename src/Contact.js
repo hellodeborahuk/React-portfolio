@@ -10,15 +10,16 @@ return (
       </h2>
       <p className="text-xl mb-6 text-teal-800">I’d love to hear from you. </p>
       <p className="text-xl mb-6 text-teal-800">
-        If you have a project you would like to discuss, a general enquiry or
+        If you have a role you would like to discuss, a general enquiry or
         would just like to have a chat please email me at d3bbie.dann@gmail.com.
       </p>
       <p className="text-xl mb-6 text-teal-800">Email: d3bbie.dann@gmail.com</p>
 
       <p className="text-xl mb-6 text-teal-800">
-        You can also find me on Twitter for a chat or LinkedIn for something a
+        You can also find me on Twitter for a chat, check out my GitHub, or connect on LinkedIn for something a
         bit more professional. Come say hello.
       </p>
+      <br />
       <Social />
     </div>
   </div>
