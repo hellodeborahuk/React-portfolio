@@ -61,13 +61,15 @@ function Project({ maxItems }) {
                 shadow-lg
                               "
           >
-            
+            <div className="w-full h-48 relative">
               <img
                 src={project.thumbnail}
                 alt={project.name}
-                className="rounded-t-lg"
+                className="rounded-t-lg absolute h-full w-full object-cover"
               />
-            
+             
+            </div>
+
             <div className="px-6 pt-6 pb-4">
               <h1 className="font-bold mb-2 text-xl text-teal-800">
                 {project.name}
