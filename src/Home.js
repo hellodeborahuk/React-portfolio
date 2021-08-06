@@ -1,6 +1,5 @@
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import React, { useEffect, useRef } from "react";
+
+import React from "react";
 import { FaCss3Alt, FaHtml5, FaReact, FaFigma } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { Link } from "react-router-dom";
@@ -8,49 +7,10 @@ import ProjectList from "./ProjectList";
 import Social from "./Social";
 
 function Home() {
-  gsap.registerPlugin(ScrollTrigger);
-  const ref = useRef(null);
-
-
-  useEffect(() => {
-
-      const element = ref.current;
-
-      gsap.from(element.querySelector(".animation1"), {
-        opacity: 0,
-        duration: 1,
-        y: -50,
-        stagger: 0.6,
-      });
-
-      gsap.from(element.querySelector(".intro-image"), {
-        opacity: 0,
-        duration: 1,
-        y: 50,
-        delay: 0.5,
-      });
-
-      gsap.from(element.querySelector(".animation2"), {
-        scrollTrigger: ".animation2",
-        opacity: 0,
-        duration: 1,
-        y: -50,
-        stagger: 0.4,
-        delay: 0.4,
-      });
-
-      gsap.from(element.querySelector(".skills"), {
-        scrollTrigger: ".skills",
-        opacity: 0,
-        duration: 1,
-        y: 50,
-        delay: 0.1,
-      });
-    
-}, []);
+ 
   
   return (
-    <div ref={ref}>
+    <div>
       {/* HERO */}
       <div
         className="
@@ -70,8 +30,7 @@ function Home() {
         <div className="p-6">
           <h1
             className="
-              animation1
-              mb-8
+                                mb-8
               text-4xl
               lg:text-7xl
               font-bold
@@ -100,6 +59,7 @@ function Home() {
           <Link
             to="/Contact"
             className="
+             
               py-3
               px-12
               rounded
@@ -124,7 +84,7 @@ function Home() {
           <img
             src="/media/debbie.jpg"
             alt="debbie"
-            className="intro-image rounded-full h-56 w-56 lg:h-80 lg:w-80 shadow-2xl border-4 border-orange-400"
+            className="rounded-full h-56 w-56 lg:h-80 lg:w-80 shadow-2xl border-4 border-orange-400"
           />
         </div>
       </div>
@@ -179,7 +139,7 @@ function Home() {
           justify-evenly"
       >
         <div className="py-12 bg-teal-600 ">
-          <div className=" skills container mx-auto grid justify-center justify-items-center">
+          <div className=" container mx-auto grid justify-center justify-items-center">
             <h2 className=" font-serif font-extrabold text-3xl lg:text-5xl mb-4 text-orange-50">
               Skills
             </h2>
@@ -212,7 +172,7 @@ function Home() {
           </div>
         </div>
         <div className=" p-6 lg:px-16 bg-orange-50 lg:flex flex-col justify-center">
-          <div className="animation2">
+          
             <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-6 text-teal-600">
               Who am I?
             </h2>
@@ -222,7 +182,7 @@ function Home() {
               My background is in digital marketing and social media. I love
               creating beautiful websites with HTML, CSS, Javascript and React.
             </p>
-          </div>
+        
         </div>
       </div>
       {/* CONNECT WITH ME */}
