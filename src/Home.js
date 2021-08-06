@@ -1,23 +1,59 @@
-import React from "react";
-import {
-  FaCss3Alt,
-  FaHtml5,
-  FaReact,
-  FaFigma,
-} from "react-icons/fa";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef } from "react";
+import { FaCss3Alt, FaHtml5, FaReact, FaFigma } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss } from "react-icons/si";
 import { Link } from "react-router-dom";
 import ProjectList from "./ProjectList";
 import Social from "./Social";
 
-
-
 function Home() {
-    return (
-      <div>
-        {/* HERO */}
-        <div
-          className="
+  gsap.registerPlugin(ScrollTrigger);
+  const ref = useRef(null);
+
+
+  useEffect(() => {
+
+      const element = ref.current;
+
+      gsap.from(element.querySelector(".animation1"), {
+        opacity: 0,
+        duration: 1,
+        y: -50,
+        stagger: 0.6,
+      });
+
+      gsap.from(element.querySelector(".intro-image"), {
+        opacity: 0,
+        duration: 1,
+        y: 50,
+        delay: 0.5,
+      });
+
+      gsap.from(element.querySelector(".animation2"), {
+        scrollTrigger: ".animation2",
+        opacity: 0,
+        duration: 1,
+        y: -50,
+        stagger: 0.4,
+        delay: 0.4,
+      });
+
+      gsap.from(element.querySelector(".skills"), {
+        scrollTrigger: ".skills",
+        opacity: 0,
+        duration: 1,
+        y: 50,
+        delay: 0.1,
+      });
+    
+}, []);
+  
+  return (
+    <div ref={ref}>
+      {/* HERO */}
+      <div
+        className="
           container
           mx-auto
           flex
@@ -30,10 +66,11 @@ function Home() {
           items-center
           justify-around
         "
-        >
-          <div className="p-6">
-            <h1
-              className="
+      >
+        <div className="p-6">
+          <h1
+            className="
+              animation1
               mb-8
               text-4xl
               lg:text-7xl
@@ -41,28 +78,28 @@ function Home() {
               text-left text-teal-600
             font-serif
             "
-            >
-              I am a
-              <span
-                className="
+          >
+            I am a
+            <span
+              className="
                 text-transparent
                 bg-clip-text bg-gradient-to-r
                 from-orange-400
                 to-orange-300
               "
-              >
-                {" "}
-                frontend
-              </span>
-              <br />
-              developer<span className="text-orange-400">.</span>
-            </h1>
-            <p className="mb-8 text-lg lg:text-xl text-teal-800">
-              Hello, I'm Debbie. I design and code beautifully simple things.
-            </p>
-            <Link
-              to="/Contact"
-              className="
+            >
+              {" "}
+              frontend
+            </span>
+            <br />
+            developer<span className="text-orange-400">.</span>
+          </h1>
+          <p className="mb-8 text-lg lg:text-xl text-teal-800">
+            Hello, I'm Debbie. I design and code beautifully simple things.
+          </p>
+          <Link
+            to="/Contact"
+            className="
               py-3
               px-12
               rounded
@@ -79,36 +116,36 @@ function Home() {
               transition
               duration-500
             "
-            >
-              Get in touch
-            </Link>
-          </div>
-          <div className="p-6">
-            <img
-              src="/media/debbie.jpg"
-              alt="debbie"
-              className="rounded-full h-56 w-56 lg:h-80 lg:w-80 shadow-2xl border-4 border-orange-400"
-            />
-          </div>
+          >
+            Get in touch
+          </Link>
+        </div>
+        <div className="p-6">
+          <img
+            src="/media/debbie.jpg"
+            alt="debbie"
+            className="intro-image rounded-full h-56 w-56 lg:h-80 lg:w-80 shadow-2xl border-4 border-orange-400"
+          />
+        </div>
+      </div>
+
+      {/* PROJECTS */}
+      <div className="container mx-auto mb-16 px-6 lg:px-0 lg:w-9/12">
+        <div className="text-center">
+          <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
+            Portfolio
+          </h2>
+          <p className="text-xl mb-8 text-teal-800">
+            Take a look at some of my projects
+          </p>
         </div>
 
-        {/* PROJECTS */}
-        <div className="container mx-auto mb-16 px-6 lg:px-0 lg:w-9/12">
-          <div className="text-center">
-            <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
-              Portfolio
-            </h2>
-            <p className="text-xl mb-8 text-teal-800">
-              Take a look at some of my projects
-            </p>
-          </div>
+        <ProjectList maxItems="3" />
 
-          <ProjectList maxItems="3" />
-
-          <div className="flex justify-center">
-            <Link
-              to="/Projects"
-              className="
+        <div className="flex justify-center">
+          <Link
+            to="/Projects"
+            className="
               px-12
               py-3
               rounded
@@ -125,58 +162,57 @@ function Home() {
               transition
               duration-500
             "
-            >
-              View more projects
-            </Link>
-          </div>
+          >
+            View more projects
+          </Link>
         </div>
+      </div>
 
-        {/* TECH STACK */}
-
-        {/* ABOUT ME */}
-        <div
-          className="container mx-auto px-6 py-6
+      {/* ABOUT ME */}
+      <div
+        className="container mx-auto px-6 py-6
           mb-16
           lg:px-0
           text-center
           lg:grid
           grid-cols-2
           justify-evenly"
-        >
-          <div className="py-12 bg-teal-600 ">
-            <div className="container mx-auto grid justify-center justify-items-center">
-              <h2 className=" font-serif font-extrabold text-3xl lg:text-5xl mb-4 text-orange-50">
-                Skills
-              </h2>
-              <div className="grid grid-cols-3 gap-4 gap-y-6 justify-center justify-items-center md:p-0  text-orange-50">
-                <div>
-                  <FaHtml5 className="p-2 text-6xl block m-auto" />
-                  <p>HTML5</p>
-                </div>
-                <div>
-                  <FaCss3Alt className="p-2 text-6xl block m-auto" />
-                  <p>CCS3</p>
-                </div>
-                <div>
-                  <SiJavascript className="p-2 text-6xl block m-auto" />
-                  <p>JavaScript</p>
-                </div>
-                <div>
-                  <FaReact className="p-2 text-6xl block m-auto" />
-                  <p>React</p>
-                </div>
-                <div>
-                  <SiTailwindcss className="p-2 text-6xl block m-auto" />
-                  <p>Tailwind CSS</p>
-                </div>
-                <div>
-                  <FaFigma className="p-2 text-6xl block m-auto" />
-                  <p>Figma</p>
-                </div>
+      >
+        <div className="py-12 bg-teal-600 ">
+          <div className=" skills container mx-auto grid justify-center justify-items-center">
+            <h2 className=" font-serif font-extrabold text-3xl lg:text-5xl mb-4 text-orange-50">
+              Skills
+            </h2>
+            <div className="grid grid-cols-3 gap-4 gap-y-6 justify-center justify-items-center md:p-0  text-orange-50">
+              <div>
+                <FaHtml5 className="p-2 text-6xl block m-auto" />
+                <p>HTML5</p>
+              </div>
+              <div>
+                <FaCss3Alt className="p-2 text-6xl block m-auto" />
+                <p>CCS3</p>
+              </div>
+              <div>
+                <SiJavascript className="p-2 text-6xl block m-auto" />
+                <p>JavaScript</p>
+              </div>
+              <div>
+                <FaReact className="p-2 text-6xl block m-auto" />
+                <p>React</p>
+              </div>
+              <div>
+                <SiTailwindcss className="p-2 text-6xl block m-auto" />
+                <p>Tailwind CSS</p>
+              </div>
+              <div>
+                <FaFigma className="p-2 text-6xl block m-auto" />
+                <p>Figma</p>
               </div>
             </div>
           </div>
-          <div className="p-6 lg:px-16 bg-orange-50 lg:flex flex-col justify-center">
+        </div>
+        <div className=" p-6 lg:px-16 bg-orange-50 lg:flex flex-col justify-center">
+          <div className="animation2">
             <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-6 text-teal-600">
               Who am I?
             </h2>
@@ -188,19 +224,20 @@ function Home() {
             </p>
           </div>
         </div>
-        {/* CONNECT WITH ME */}
-        <div className="container mx-auto mb-16 px-6 lg:px-0 text-center lg:w-1/2">
-          <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-4 text-teal-600">
-            Connect with me
-          </h2>
-          <p className="text-xl mb-6 text-teal-800">
-            You can find me on Twitter for a chat or LinkedIn for something a
-            bit more professional. Come say hello.
-          </p>
-          <Social />
-        </div>
       </div>
-    );
+      {/* CONNECT WITH ME */}
+      <div className="container mx-auto mb-16 px-6 lg:px-0 text-center lg:w-1/2">
+        <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-4 text-teal-600">
+          Connect with me
+        </h2>
+        <p className="text-xl mb-6 text-teal-800">
+          You can find me on Twitter for a chat or LinkedIn for something a bit
+          more professional. Come say hello.
+        </p>
+        <Social />
+      </div>
+    </div>
+  );
 }
 
-    export default Home;
+export default Home;
