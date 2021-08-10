@@ -14,7 +14,7 @@ function App() {
         <ScrollToTop />
         {/* NAVIGATION */}
         <div className="bg-gradient-to-br from-teal-50 to-teal-100">
-          <div className="text-gray-600">
+          <nav className="text-gray-600">
             <div className="container mx-auto lg:flex lg:justify-between px-6 lg-px-0 py-6">
               {/* LEFT HEADER */}
               <div className="flex items-center space-x-4">
@@ -26,7 +26,7 @@ function App() {
                 </Link>
               </div>
 
-              {/* MIDDLE HEADER */}
+              {/* RIGHT HEADER */}
               <div className="flex items-center space-x-6">
                 <Link
                   to="/"
@@ -48,7 +48,7 @@ function App() {
                 </Link>
               </div>
             </div>
-          </div>
+          </nav>
 
           <Switch>
             <Route path="/projects">
@@ -70,7 +70,7 @@ function App() {
 
           {/* FOOTER */}
 
-          <div className="py-6 bg-orange-50 text-teal-800">
+          <footer className="py-6 bg-orange-50 text-teal-800">
             <div
               className="
             mt-4
@@ -97,7 +97,7 @@ function App() {
                 </Link>
               </div>
             </div>
-          </div>
+          </footer>
         </div>
       </Router>
     </div>

@@ -10,9 +10,9 @@ function Home() {
  
   
   return (
-    <div>
+    <main>
       {/* HERO */}
-      <div
+      <section
         className="
           container
           mx-auto
@@ -87,10 +87,10 @@ function Home() {
             className="rounded-full h-56 w-56 lg:h-80 lg:w-80 shadow-2xl border-4 border-orange-400"
           />
         </div>
-      </div>
+      </section>
 
       {/* PROJECTS */}
-      <div className="container mx-auto mb-16 px-6 lg:px-0 lg:w-9/12">
+      <section className="container mx-auto mb-16 px-6 lg:px-0 lg:w-9/12">
         <div className="text-center">
           <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
             Portfolio
@@ -126,10 +126,10 @@ function Home() {
             View more projects
           </Link>
         </div>
-      </div>
+      </section>
 
       {/* ABOUT ME */}
-      <div
+      <section
         className="container mx-auto px-6 py-6
           mb-16
           lg:px-0
@@ -172,21 +172,19 @@ function Home() {
           </div>
         </div>
         <div className=" p-6 lg:px-16 bg-orange-50 lg:flex flex-col justify-center">
-          
-            <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-6 text-teal-600">
-              Who am I?
-            </h2>
-            <p className="text-xl mb-6 text-teal-800 text-left">
-              I am a self-taught frontend developer. I'm also a yoga teacher and
-              bake pretty tasty cakes (or at least that’s what people tell me).
-              My background is in digital marketing and social media. I love
-              creating beautiful websites with HTML, CSS, Javascript and React.
-            </p>
-        
+          <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-6 text-teal-600">
+            Who am I?
+          </h2>
+          <p className="text-xl mb-6 text-teal-800 text-left">
+            I am a self-taught frontend developer. I'm also a yoga teacher and
+            bake pretty tasty cakes (or at least that’s what people tell me). My
+            background is in digital marketing and social media. I love creating
+            beautiful websites with HTML, CSS, Javascript and React.
+          </p>
         </div>
-      </div>
+      </section>
       {/* CONNECT WITH ME */}
-      <div className="container mx-auto mb-16 px-6 lg:px-0 text-center lg:w-1/2">
+      <section className="container mx-auto mb-16 px-6 lg:px-0 text-center lg:w-1/2">
         <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-4 text-teal-600">
           Connect with me
         </h2>
@@ -195,8 +193,8 @@ function Home() {
           more professional. Come say hello.
         </p>
         <Social />
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 

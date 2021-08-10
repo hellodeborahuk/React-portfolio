@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Dosha() {
   return (
-    <div className="container mx-auto">
+    <article className="container mx-auto">
       <div className="bg-orange-50 p-6">
         <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
           Ayurveda Dosha Quiz
@@ -15,7 +15,7 @@ function Dosha() {
         </p>
       </div>
       <div className="lg:flex p-6 space-x-8">
-        <div>
+        <aside>
           <div className="mb-6">
             <h3 className="font-bold text-xl lg:text-2xl mb-3 text-teal-600">
               Technologies
@@ -62,8 +62,8 @@ function Dosha() {
               </p>
             </div>
           </div>
-        </div>
-        <article className="space-y-4 lg:w-8/12">
+        </aside>
+        <section className="space-y-4 lg:w-8/12">
           <p className="text-teal-800">
             I wanted to build a project on my own. First up I created a design
             for the dosha quiz in Figma and found a colour scheme I liked the
@@ -161,9 +161,9 @@ function Dosha() {
               View more projects
             </Link>
           </div>
-        </article>
+        </section>
       </div>
-    </div>
+    </article>
   );
 }
 
