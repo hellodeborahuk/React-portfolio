@@ -3,15 +3,15 @@ import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function Dosha() {
+function Notes() {
   return (
     <article className="container mx-auto">
       <div className="bg-orange-50 p-6">
         <h2 className="font-serif font-extrabold text-3xl lg:text-5xl mb-3 text-teal-600">
-          Ayurveda Dosha Quiz
+          Notes App
         </h2>
         <p className="text-xl mb-6 text-teal-800">
-          A quiz to tell you your Dosha, created with React.
+          A CRUD application to store and edit notes.
         </p>
       </div>
       <div className="lg:flex p-6 space-x-8">
@@ -22,9 +22,8 @@ function Dosha() {
             </h3>
             <ul className="text-lg mb-6 text-teal-800 list-disc list-inside">
               <li>React</li>
-              <li>CSS3</li>
+              <li>Tailwind CSS</li>
               <li>HTML5</li>
-              <li>Figma</li>
             </ul>
           </div>
           <div>
@@ -34,7 +33,7 @@ function Dosha() {
             <div className="flex justify-evenly">
               <p className="text-3xl font-bold text-orange-400">
                 <a
-                  href="https://cranky-curran-3d406a.netlify.app/"
+                  href="https://awesome-lamport-4fcaff.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -48,7 +47,7 @@ function Dosha() {
               </p>
               <p className="text-3xl font-bold text-orange-400">
                 <a
-                  href="https://github.com/hellodeborahuk/dosha-quiz"
+                  href="https://github.com/hellodeborahuk/coding-notebook"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -63,71 +62,79 @@ function Dosha() {
             </div>
           </div>
         </section>
-        <section className="space-y-4 lg:w-8/12">
-          <p className="text-teal-800">
-            I wanted to build a project on my own. First up I created a design
-            for the dosha quiz in Figma and found a colour scheme I liked the
-            look of. I wanted a quiz where when you select an option and it
-            would remember what you've counted and let you know at the end how
-            many of each button you'd selected. From the initial design, I
-            decided to use a next question button rather than a back button. I
-            personally don't feel like you need to go backwards on such a quiz.
+        <section className="lg:w-8/12 space-y-4 text-teal-800">
+          <p>
+            I wanted to create an CRUD project that would allow me to track my
+            notes from #100DaysOfCode challenge on Twitter. I followed a{" "}
+            <a
+              href="https://www.youtube.com/watch?v=8KB3DHI-QbM"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:no-underline"
+            >
+              tutorial on YouTube
+            </a>{" "}
+            where I encountered issues as I wanted inputs from two fields. This
+            was also a challenge when it came to searching within the two
+            fields.
           </p>
           <img
-            src="./media/dosha-quiz-figma.png"
-            alt="dosha quiz design in figma"
+            src="./media/notes.png"
+            alt="notes app"
             className="m-auto lg:w-9/12"
           />
           <h3 className="font-bold text-xl lg:text-2xl mb-3 text-teal-600">
             Stumbling blocks
           </h3>
           <p className="text-teal-800">
-            To get the initial design and questions up was relatively
-            straightforward. Where I got stuck was with trying to count how many
-            of each button had been clicked (a, b or c). Whichever had the most
-            clicks was the answer. I reached out to the community for some
-            guidance and was given some direction which helped me figure out how
-            to do this. I filtered the results array and used the length of the
-            filtered array to count the a, b and c's. To work out which was
-            clicked the most I used if statements.
+            I decided to use Tailwind CSS as it's something I've recently been
+            learning and I really liked how simple it was to create the look of
+            the note component, similar to a window. After the initial setup of
+            the notes and saving them to local storage, I added tagging
+            functionality. I could now add and remove multiple tags from each
+            note.
           </p>
-
+          <p>
+            With the ability to add tags, I thought it would be useful to filter
+            notes by tag so I added a filter button next to the search.
+          </p>
+          <p>
+            To create the edit functionality I had to refactor my components so
+            that the form stood alone but also was included in the Note. The
+            Note component contains two further components: the form and the
+            note view. This meant went the edit button was clicked it would show
+            the form and when saved it would show the note view.
+          </p>
           <img
-            src="./media/dosha-quiz-code.png"
-            alt="dosha quiz counting code"
+            src="./media/add-new-note.gif"
+            alt="add new note and search functionality gif"
             className="m-auto lg:w-9/12"
           />
 
           <h3 className="font-bold text-xl lg:text-2xl mb-3 text-teal-600">
             Future improvements
           </h3>
-          <ul className="text-lg mb-6 text-teal-800 list-disc list-inside pl-6 ">
+          <ul className="list-disc list-inside pl-6 ">
+            <li>Save information to a database.</li>
+            <li>Ability to login.</li>
             <li>
-              I want to create a pie chart with results in to show what
-              percentage of each dosha someone is.
+              Pin notes to the top or mark as favourite.
             </li>
-            <li> Add the ability to go back and change your answer.</li>
-            <li> A reset button on the results page to try the quiz again.</li>
           </ul>
 
-          <img
-            src="./media/dosha-quiz.png"
-            alt="dosha quiz"
-            className="m-auto lg:w-9/12"
-          />
           <p className=" text-teal-800">
             View the{" "}
             <a
-              href="https://cranky-curran-3d406a.netlify.app/"
+              href="https://awesome-lamport-4fcaff.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline"
             >
-              Dosha Quiz
+              Notes app
             </a>{" "}
             or visit the{" "}
             <a
-              href="https://github.com/hellodeborahuk/dosha-quiz"
+              href="https://github.com/hellodeborahuk/coding-notebook"
               target="_blank"
               rel="noopener noreferrer"
               className="underline"
@@ -166,4 +173,4 @@ function Dosha() {
   );
 }
 
-export default Dosha;
+export default Notes;

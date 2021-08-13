@@ -17,12 +17,12 @@ function WeatherApp() {
         </p>
       </div>
       <div className="lg:flex p-6 space-x-8">
-        <aside>
+        <section>
           <div className="mb-6">
             <h3 className="font-bold text-xl lg:text-2xl mb-3 text-teal-600">
               Technologies
             </h3>
-            <ul className="text-lg mb-6 text-teal-800">
+            <ul className="text-lg mb-6 text-teal-800 list-disc list-inside">
               <li>React</li>
               <li>CSS3</li>
               <li>HTML5</li>
@@ -65,7 +65,7 @@ function WeatherApp() {
               </p>
             </div>
           </div>
-        </aside>
+        </section>
         <section className="space-y-4 lg:w-8/12">
           <p className="text-teal-800">
             For the SheCodes React Workshop, we went through the process of

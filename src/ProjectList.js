@@ -4,6 +4,14 @@ import { FaLink } from "react-icons/fa";
 
 const project = [
   {
+    name: "Notes App",
+    thumbnail: "./media/notes.png",
+    copy: "A CRUD application to store and edit notes.",
+    caseStudy: "/Notes",
+    link: "https://awesome-lamport-4fcaff.netlify.app/",
+    github: "https://github.com/hellodeborahuk/coding-notebook",
+  },
+  {
     name: "React Weather App",
     thumbnail: "./media/react-weather.png",
     copy: "A weather app built with ReactJS and API intergration for my SheCodes Workshop project.",

@@ -3,6 +3,7 @@ import Home from "./Home";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import WeatherApp from "./WeatherApp";
+import Notes from "./Notes";
 import Dosha from "./Dosha";
 import "./App.css";
 import ScrollToTop from "./ScrollToTop";
@@ -62,6 +63,9 @@ function App() {
             </Route>
             <Route path="/dosha">
               <Dosha />
+            </Route>
+            <Route path="/notes">
+              <Notes />
             </Route>
             <Route path="/">
               <Home />
