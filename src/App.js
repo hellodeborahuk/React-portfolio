@@ -43,7 +43,21 @@ function App() {
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-block  hover:text-gray-900 hover-underline-animation"
+                  className="py-1
+              px-4
+              rounded
+              shadow-lg
+              hover:shadow-2xl
+              bg-gradient-to-br
+              from-orange-300
+              to-orange-400
+              hover:from-orange-400 hover:to-orange-300
+              text-teal-800
+              font-bold
+              text-lg
+              tracking-wide
+              transition
+              duration-500"
                 >
                   Contact
                 </Link>
